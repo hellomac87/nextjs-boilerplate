@@ -1,7 +1,8 @@
 import { Container, AppProps } from "next/app";
+import { wrapper } from "../store";
 import GlobalStyle from "../styles/GlobalStyle";
 
-export default function App({ Component, pageProps }: AppProps): JSX.Element {
+function App({ Component, pageProps }: AppProps): JSX.Element {
   return (
     <Container>
       <GlobalStyle />
@@ -9,3 +10,5 @@ export default function App({ Component, pageProps }: AppProps): JSX.Element {
     </Container>
   );
 }
+
+export default wrapper.withRedux(App);
