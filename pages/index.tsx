@@ -9,6 +9,7 @@ const IndexPage = () => (
     <h1>Hello Next.js 👋</h1>
     <Title>My page</Title>
     <Github/>
+    {/* <Test/> */}
     <p>
       <Link href="/about">
         <a>About</a>
